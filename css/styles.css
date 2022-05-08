@@ -96,7 +96,6 @@ margin-right: 0;
 .site-nav .link.current{
 color: var(--accent-color);
 }
-
 .auth-nav{
     display: flex;
     margin-left: auto;
@@ -104,8 +103,7 @@ color: var(--accent-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
+} 
 .auth-nav .auth-item{
     display: block;
     padding-top: 32px;
@@ -116,21 +114,29 @@ color: var(--accent-color);
 .auth-nav .auth-item:last-child{
     margin-left: 50px;
 }
-
-.auth-item.icon::before {
-    display: block;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-color: #2196F3;
-    ;
-} 
-
 .auth-nav a:hover,
 .auth-nav a:focus{
     color: var(--accent-color);
 }
-
+.auth-item:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url(../images/contacts/contact-mail.svg);
+}
+.auth-item:last-child::before{
+    content:"";
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/contacts/contact-smartphone.svg);
+}
+.auth-item::before{
+    
+}
 .border-header {
      border: 1px solid #ECECEC;
 }
@@ -148,6 +154,16 @@ h4 {
        padding: 200px 0;
     background-color: var(--bgc-hero-footer);
  }
+ .overlay{
+     height: 600px;
+     max-width: 1600px;
+     margin: 0 auto;
+     background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url(../images/baground/baground-hiro.jpg);
+     background-color: gray;
+    
+}
 .hero-title{
         width: 696px;
         margin-left: auto;
@@ -371,6 +387,7 @@ background-color: #fff;
     margin-bottom: 30px;
     background-color: #fff;
     border: 1px solid #EEEEEE;
+    
 }
 .portfolio-item:nth-child(3n){
     margin-right: 0;
