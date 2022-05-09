@@ -12,7 +12,9 @@
 
 /* НОРМАЛИЗАЦИЯ */
 h1,h2,h3,h4,h5,h6,p{margin: 0;}
-a{text-decoration:none;}
+a{text-decoration:none;
+    color: inherit;
+}
 
 ul, ul li{
     list-style: none;
@@ -133,9 +135,6 @@ color: var(--accent-color);
     height: 16px;
     margin-right: 10px;
     background-image: url(../images/contacts/contact-smartphone.svg);
-}
-.auth-item::before{
-    
 }
 .border-header {
      border: 1px solid #ECECEC;
