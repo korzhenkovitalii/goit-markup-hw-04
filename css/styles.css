@@ -55,7 +55,7 @@ body {
 .navigation{
     display: flex;
 }
-.logo {
+.logo-web {
     display: inline-block;
     margin-right: 93px;
     padding-top: 24px;
@@ -358,7 +358,37 @@ background-color: #fff;
     background-color: var(--accent-color);
     fill: #fff;
  } 
-
+ /*  Постоянные клиенты  */
+ .clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
+.regular-clients{
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding: 0;
+}
+.item-clients{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    margin-right: 30px;
+}
+.first-cliant{
+    width: 170px;
+    height: 92px;
+    fill: rgba(175, 177, 184, 1);
+}
+.first-cliant:hover,
+.item-clients:hover {
+    fill: #2196F3;
+    border: 1px solid #2196F3   ;
+}
+    
+ 
 /* --------------------------------------------- */
   /* footer  */
   .footer{
@@ -366,15 +396,16 @@ background-color: #fff;
       padding-top: 60px;
       padding-bottom: 60px;
   }
-.logo-studio {
-    color: var(--title-text-color);
-}
 .footer .logo-studio{
       color: var(--hero-color);
      
   }
+  .footer-content{
+      display: flex;
+  }
   .footer-addres{
       margin-top: 30px;
+      margin-right: 70px;
   }
 .address {
     color: var(--hero-color);
@@ -388,6 +419,20 @@ background-color: #fff;
 .contacts:focus {
     color: var(--accent-color);
 }
+.join{
+    color: var(--page-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer-content .button-icons{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-content .button-icons:hover {
+    background-color: var(--accent-color);
+}
+
+
+
 /* main-pertfolio  */
 .page-section{
     padding-top: 94px;
