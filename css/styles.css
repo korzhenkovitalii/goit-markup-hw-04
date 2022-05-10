@@ -98,6 +98,8 @@ margin-right: 0;
 .site-nav .link.current{
 color: var(--accent-color);
 }
+
+
 .auth-nav{
     display: flex;
     margin-left: auto;
@@ -112,33 +114,29 @@ color: var(--accent-color);
     padding-bottom: 32px;
     color: var(--primery-text-color);
     letter-spacing: 0.02em;
+    margin-right: 30px;
 }
-.auth-nav .auth-item:last-child{
-    margin-left: 50px;
+.contact-mail,
+.contact-pnone{
+    color: inherit;
 }
-.auth-nav a:hover,
-.auth-nav a:focus{
+.contact-mail,
+.contact-pnone{
+    display: flex;
+    align-items: center;
+}
+.icon-contact{
+    fill: currentColor;
+    margin-right: 10px;
+}
+.auth-item:hover,
+.auth-item:focus{
     color: var(--accent-color);
 }
-/* .auth-item:first-child::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-image: url(../images/contacts/contact-mail.svg);
-} */
-/* .auth-item:last-child::before{
-    content:"";
-    display: inline-block;
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url(../images/contacts/contact-smartphone.svg);
-} */
+
 .border-header {
      border: 1px solid #ECECEC;
-}
+} 
 /* --------------------------------------------------  */
     
 
@@ -331,12 +329,15 @@ background-color: #fff;
 }
 .social-links{
     display: flex;
-    margin: 0;
     justify-content: center;
     align-items: center;    
 }
+.social-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .button-icons{
-    display: block;
     width: 44px;
     height: 44px;
     justify-content: center;
@@ -349,8 +350,6 @@ background-color: #fff;
     border-radius: 50%;
 }
 .social-icon{
-    /* width: 20px;
-    height: 20px; */
     justify-content: center;
     align-items: center;
 }
@@ -362,6 +361,14 @@ background-color: #fff;
  .clients{
     padding-top: 94px;
     padding-bottom: 94px;
+ }
+ .clients-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
  }
 .regular-clients{
     display: flex;
@@ -377,13 +384,12 @@ background-color: #fff;
     border-radius: 4px;
     margin-right: 30px;
 }
-.first-cliant{
+.icon-cliant{
     width: 170px;
     height: 92px;
     fill: rgba(175, 177, 184, 1);
 }
-.first-cliant:hover,
-.item-clients:hover {
+.icon-cliant:hover{
     fill: #2196F3;
     border: 1px solid #2196F3   ;
 }
